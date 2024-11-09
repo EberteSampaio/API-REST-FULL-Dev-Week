@@ -8,7 +8,8 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Entity(name = "tb_card")
+@Entity
+@Table(name = "tb_card")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -22,7 +23,7 @@ public class Card {
     @Column(unique = true)
     private String number;
 
-    @Column(name = "card_limit",scale = 13, precision = 2)
+    @Column(name = "card_limit",precision = 13,  scale = 2)
     private BigDecimal limit;
 
 }

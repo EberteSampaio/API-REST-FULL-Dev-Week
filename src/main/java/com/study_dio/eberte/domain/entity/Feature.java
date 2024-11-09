@@ -1,15 +1,9 @@
 package com.study_dio.eberte.domain.entity;
 
 import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.Table;
 
-@Entity(name = "tb_feature")
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "tb_feature")
+@Entity
 public class Feature extends BaseItem{
 }
